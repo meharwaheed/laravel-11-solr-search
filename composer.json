@@ -7,10 +7,13 @@
     "require": {
         "php": "^8.2",
         "algolia/algoliasearch-client-php": "^3.4",
+        "elasticsearch/elasticsearch": "^8.12",
+        "http-interop/http-factory-guzzle": "^1.2",
         "klaasie/scout-solr-engine": "^2.1",
         "laravel/framework": "^11.0",
         "laravel/scout": "^10.8",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "meilisearch/meilisearch-php": "^1.7"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.12",

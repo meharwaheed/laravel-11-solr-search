@@ -12,7 +12,7 @@ Route::get('/', function () {
 
 //    $select->addField('email');
 //    $select->setQuery('(name:Raoul Cronin OR email:example)');
-    $select->setQuery('*(email:example)*');
+    $select->setQuery('*(name:storphy)*');
 
     // Set the limit for the number of rows (results)
     $select->setRows(100);
@@ -20,7 +20,7 @@ Route::get('/', function () {
 
     $result = $engine->select($select, $engine->getEndpointFromConfig($model->searchableAs())); // getEndpointFromConfig() is only necessary when your model does not use the default solr instance.
 
-    echo "<pre> ". var_dump($result->getData()) ." </pre>";
+    echo "<pre> ". var_dump($result->getDocuments()) ." </pre>";
 
 //    return view('welcome');
 });

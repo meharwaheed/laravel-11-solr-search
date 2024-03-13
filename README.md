@@ -84,3 +84,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 `Run Project`
 
 `http://127.0.0.1:8000`
+
+
+## Run Meili search With Docker
+
+` docker run -d -p 7700:7700 -e MEILI_MASTER_KEY='NODESOL' --name=meilisearch -v ~/meilisearch:/meili_data getmeili/meilisearch:latest meilisearch --env="development"`
