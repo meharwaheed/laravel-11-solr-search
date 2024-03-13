@@ -73,3 +73,14 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 `docker exec -it solr solr create_core -c gettingstarted`
 
 `http://172.17.0.1:8983`
+
+## Run Migrations
+`php artisan migrate --seed`
+
+`Import Data into Solr Search`
+
+`php artisan scout:import "App\Models\User"`
+
+`Run Project`
+
+`http://127.0.0.1:8000`
